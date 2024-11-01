@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey</title>
+  <!-- Manrope Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Tailwind & Daisy-Ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary-color": '#FF4240',
+            "title-color": '#131318',
+            "description-color": '#13131899',
+            "secondary-color": '#424247',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="manrope-font">
+  <header class="container mx-auto">
+    <!-- Nav Section -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-primary-color -mx-2">’</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-lg font-medium text-secondary-color">
+          <li class="hover:text-primary-color"><a href="#">Home</a></li>
+          <li class="hover:text-primary-color"><a href="#">About</a></li>
+          <li class="hover:text-primary-color"><a href="#">Pages</a></li>
+          <li class="hover:text-primary-color"><a href="#">Blog</a></li>
+          <li class="hover:text-primary-color"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end space-x-6">
+        <img src="icon/Frame.png" alt="">
+        <a class="btn bg-primary-color text-white text-xl font-bold">Get Ticket</a>
+      </div>
+    </div>
+    <!-- Hero-carousel section -->
+    <div class="relative space-y-4">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full h-[200px] lg:h-[550px]">
+          <img src="Images/1.png" class="w-full bg-cover"/>
+          <div class="absolute left-[150px] right-[150px] lg:left-5 bottom-8 flex -translate-y-1/2 transform gap-4">
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-none hover:bg-primary-color duration-500">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-none hover:bg-primary-color duration-500">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full h-[200px] lg:h-[550px]">
+          <img src="Images/2.png" class="w-full bg-cover" />
+          <div class="absolute left-[150px] right-[150px] lg:left-5 bottom-8 flex -translate-y-1/2 transform gap-4">
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-none hover:bg-primary-color duration-500">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-none hover:bg-primary-color duration-500">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full h-[200px] lg:h-[550px]">
+          <img src="Images/4.png" class="w-full bg-cover" />
+          <div class="absolute left-[150px] right-[150px] lg:left-5 bottom-8 flex -translate-y-1/2 transform gap-4">
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-none hover:bg-primary-color duration-500">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-none hover:bg-primary-color duration-500">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="lg:absolute bg-title-color text-white lg:w-[500px] h-[150px] right-32 bottom-8 p-4 lg:p-8 space-y-2 rounded-2xl">
+        <h6 class="text-white text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h6>
+        <p class="text-[#FFFFFF99] text-sm lg:text-base font-mediums">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+    </div>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
